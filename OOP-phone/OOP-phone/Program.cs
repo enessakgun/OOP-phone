@@ -5,237 +5,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-/*
-namespace OOP_phone
-{
-    internal class Program
-    {
-        private static object basadon1;
-
-
-       
-
-        static void Main(string[] args)
-        {
-
-
-            xioami xioami = new xioami();
-            samsung samsung = new samsung();
-            iphone iphone = new iphone();
-          
-            while (true)
-            {
-            basadon1:
-                Console.Clear();
-                Console.WriteLine("lütfen incelemek istediginiz markayı giriniz.çıkmak için 4 e basınız.");
-                Console.WriteLine("1-iphone 2-xioami 3-samsung");
-
-
-                while (true)
-                {
-
-                    string secim = null;
-                    secim = Console.ReadLine();
-                    if (secim == "1")
-                    {
-                    basadon:
-                        Console.Clear();
-                        iphone.iphonemodelleri();
-                        while (true)
-                        {
-                            string secim1 = null;
-                            secim1 = Console.ReadLine();
-                            if (secim1 == "1")
-                            {
-                                iphone.iphonex();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-                            }
-                            else if (secim1 == "2")
-                            {
-                                iphone.iphone11();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-                            }
-                            else if (secim1 == "3")
-                            {
-                                iphone.iphone14();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-                            }
-                            else if (secim1 == "4")
-                            {
-                                Environment.Exit(0);
-                            }
-                            else if (secim1 == "5")
-                            {
-                                goto basadon1;
-                            }
-                            else
-                            {
-                                Console.WriteLine("hatalı giriş.Enter a bas.");
-                                Console.ReadKey();
-                                Console.Clear();
-                                goto basadon;
-                            }
-                            
-                        }
-                    }
-                    else if (secim == "2")
-                    {
-                    basadon:
-                        Console.Clear();
-                        xioami.xioamimodelleri();
-
-                        while (true)
-                        {
-
-                            string secim1 = null;
-                            secim1 = Console.ReadLine();
-                            if (secim1 == "1")
-                            {
-                                xioami.Redmi9();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-
-                            }
-                            else if (secim1 == "2")
-                            {
-                                xioami.Redmi10();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-
-                            }
-                            else if (secim1 == "3")
-                            {
-                                xioami.note10();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-
-                            }
-                            else if (secim1 == "4")
-                            {
-                                Environment.Exit(0);
-                            }
-                            else if (secim1 == "5")
-                            {
-                                goto basadon1;
-                            }
-                            else
-                            {
-                                Console.WriteLine("hatalı giriş.Enter a bas.");
-                                Console.ReadKey();
-                                Console.Clear();
-                                goto basadon;
-                            }
-                          
-                        }
-                    }
-                    else if (secim == "3")
-                    {
-                    basadon:
-                        Console.Clear();
-                        samsung.samsungmodelleri();
-
-                        while (true)
-                        {
-                            string secim1 = null;
-                            secim1 = Console.ReadLine();
-                            if (secim1 == "1")
-                            {
-                                samsung.s22();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-
-                            }
-                            else if (secim1 == "2")
-                            {
-                                samsung.note10();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-
-                            }
-                            else if (secim1 == "3")
-                            {
-                                samsung.note11();
-                                string secim2 = null;
-                                secim2 = Console.ReadLine();
-                                if (secim2 == "5")
-                                {
-                                    goto basadon;
-                                }
-                            }
-                            else if (secim1 == "4")
-                            {
-                                Environment.Exit(0);
-                            }
-                            else if (secim1 == "5")
-                            {
-                                goto basadon1;
-                            }
-                            else
-                            {
-                                Console.WriteLine("hatalı giriş.Enter a bas.");
-                                Console.ReadKey();
-                                Console.Clear();
-                                goto basadon;
-                            }
-                            
-                        }
-                    }
-                    else if (secim == "4")
-                    {
-                        Environment.Exit(0);
-                    }
-                    else
-                    {
-                        Console.WriteLine("hatalıı giriş.enter a bas.");
-                        Console.ReadKey();
-                    }
-                    goto basadon1;
-                }
-            }
-              
-            }
-        }
-    }
-*/
-
-
-
-
 
 namespace OOP_phone
 {
@@ -259,6 +28,7 @@ namespace OOP_phone
                 {
                     while (true)
                     {
+                        basadon:
                         Console.Clear();
                         iphone.iphonemodelleri();
                         string secim1 = Console.ReadLine();
@@ -283,10 +53,12 @@ namespace OOP_phone
                             default:
                                 Console.WriteLine("Hatalı giriş. Enter'a bas.");
                                 Console.ReadKey();
-                                break;
+                                goto basadon;
                         }
                         if (secim1 == "5")
                             break;
+                        basadon1:
+                        Console.WriteLine("cıkış için4 e bir üst menü için 5 e basınız.");
                         string secim2 = Console.ReadLine();
                         switch(secim2)
                         {
@@ -298,7 +70,7 @@ namespace OOP_phone
                             default:
                                 Console.WriteLine("Hatalı giriş. Enter'a bas.");
                                 Console.ReadKey();
-                                break;
+                                goto basadon1;
                         }
 
                     }
@@ -306,7 +78,8 @@ namespace OOP_phone
                 else if (secim == "2")
                 {
                     while (true)
-                    {
+                    { 
+                        basadon:
                         Console.Clear();
                         xioami.xioamimodelleri();
                         string secim1 = Console.ReadLine();
@@ -330,10 +103,26 @@ namespace OOP_phone
                             default:
                                 Console.WriteLine("Hatalı giriş. Enter'a bas.");
                                 Console.ReadKey();
-                                break;
+                                goto basadon;
+                                
                         }
                         if (secim1 == "5")
                             break;
+                        basadon1:
+                        Console.WriteLine("cıkış için4 e bir üst menü için 5 e basınız.");
+                        string secim2 = Console.ReadLine();
+                        switch (secim2)
+                        {
+                            case "4":
+                                Environment.Exit(0);
+                                break;
+                            case "5":
+                                break;
+                            default:
+                                Console.WriteLine("Hatalı giriş. Enter'a bas.");
+                                Console.ReadKey();
+                               goto basadon1;
+                        }
 
                     }
                 }
@@ -341,6 +130,7 @@ namespace OOP_phone
                 {
                     while (true)
                     {
+                        basadon:
                         Console.Clear();
                         samsung.samsungmodelleri();
                         string secim1 = Console.ReadLine();
@@ -364,10 +154,26 @@ namespace OOP_phone
                             default:
                                 Console.WriteLine("Hatalı giriş. Enter'a bas.");
                                 Console.ReadKey();
-                                break;
+                                goto basadon;
                         }
                         if (secim1 == "5")
                             break;
+                        basadon1:
+                        Console.WriteLine("cıkış için 4 e bir üst menü için 5 basınız.");
+                        string secim2 = Console.ReadLine();
+                        switch (secim2)
+                        {
+                            case "4":
+                                Environment.Exit(0);
+                                break;
+                            case "5":
+                                break;
+                            default:
+                                Console.WriteLine("Hatalı giriş. Enter'a bas.");
+                                Console.ReadKey();
+                                goto basadon1;
+
+                        }
 
 
                     }
@@ -382,7 +188,8 @@ namespace OOP_phone
                     Console.ReadKey();
                 }
             }
-        
         }
     }
 }
+
+

@@ -19,8 +19,7 @@ namespace OOP_phone
         public void özellikmetni()
         {
             Console.WriteLine("marka:"+marka+" model:"+model+" fiyat: "+fiyat+" renk:"+renk+" üretimyılı:"+üretimyılı+" hafıza:"+hafıza);
-            Console.WriteLine("cıkış için space 4 e bir üst menü için space 5 basınız.");
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
     
