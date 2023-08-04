@@ -1,17 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.Data.SqlClient;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace OOP_phone
 {
     internal class Program
     {
+
+       
+
         static void Main(string[] args)
-        {
+            {
+            
+            sqlconnection sqlconnection = new sqlconnection();
+            sqlconnection.sqlopen();
+           
+
+            
             xioami xioami = new xioami();
             samsung samsung = new samsung();
             iphone iphone = new iphone();
@@ -175,7 +187,6 @@ namespace OOP_phone
 
                         }
 
-
                     }
                 }
                 else if (secim == "4")
@@ -187,9 +198,10 @@ namespace OOP_phone
                     Console.WriteLine("Hatalı giriş. Enter'a bas.");
                     Console.ReadKey();
                 }
-            }
+            }  
+            
         }
-    }
+    }        
 }
 
 
